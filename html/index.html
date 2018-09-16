@@ -12,7 +12,7 @@
   <link href="favicon.ico" rel="shortcut icon">
 
   <!-- css + javascript -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="//fonts.googleapis.com/css?family=Cormorant+Garamond:400,600,700|Istok+Web:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" media="all">
 
   <!--[if lt IE 9]>
@@ -24,179 +24,243 @@
 
 </head>
 <body>
-<!-- wrapper -->
-<div class="wrapper">
-  <header role="banner">
-    <div class="container-fluid">
+  <!-- wrapper -->
+  <div class="wrapper">
+    <header role="banner">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="header--logo col-xl-2">
+            <img src="img/logo.png" alt="" title="">
+          </div><!-- /header--logo -->
+
+          <nav class="header--nav col-xl-4 offset-xl-4" role="navigation">
+            <ul class="headnav">
+              <li class="current"><a href="#">Главная</a></li>
+              <li><a href="#">Консультации</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </nav><!-- /header--nav -->
+
+          <div class="header--phone col-xl-2">
+            <a href="tel:+380974584565" class="header--phone__phone"><i class="ico-phone"></i>097 458 45 65</a>
+            <p>Доступный в <a class="header--phone__viber" href="">Viber</a></p>
+          </div><!-- /header--phone -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </header><!-- /header -->
+
+    <section role="main">
+
+      <div class="homeblock-headline">
+        <div class="container-fluid">
+
+              <div class="homeblock-headline--container">
+                <div class="row">
+                  <h4 class="homeblock-headline__title col-xl-8 offset-xl-2">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
+                  <h5 class="homeblock-headline__description col-xl-6 offset-xl-3">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
+                </div><!-- /.row -->
+                <a href="#homeblock-about" class="homeblock-headline__more"><i class="ico-more"></i>Узнать больше</a>
+              </div>
+              <!-- /.homeblock-headline--container -->
+
+          </div><!-- /.container -->
+      </div><!-- /.homeblock-headline -->
+
+      <div class="homeblock-about" id="homeblock-about">
+        <div class="container-fluid">
+            <div class="row">
+              <h2 class="homeblock-about__title col-xl-12">Обо мне</h2>
+              <div class="homeblock-about__content col-xl-4 offset-xl-6">
+                <p>Елена Ма - ведический астролог, гид Системы Дизайна Человека.  Астропсихолог, эксперт по теме человеческих взаимоотношений и самореализации женщины. </p>
+                <p>Автор и ведущая семинаров по личностному росту и духовному развитию человека. Основатель образовательно-просветительского центра «Геометрия  Судьбы».</p>
+                <a href="#">Читать больше</a>
+              </div><!-- /.homeblock-about__content col-xl-6 offset-xl-6 -->
+              <div class="homeblock-about__slider_title col-xl-8 offset-xl-2">Мои консультации<span>помогут вам:</span></div><!-- /.homeblock-about__slider_title -->
+              <div class="homeblock-about__slider_container col-xl-5 offset-xl-5">
+                <div class="homeblock-about__slider_slider">
+                  <h6><span>Понять</span> в чем потенциал вашего развития и <span>успеха</span>.</h6>
+                  <h6><span>Понять</span> в чем потенциал вашего развития и <span>успеха</span>.</h6>
+                  <h6><span>Понять</span> в чем потенциал вашего развития и <span>успеха</span>.</h6>
+                  <h6><span>Понять</span> в чем потенциал вашего развития и <span>успеха</span>.</h6>
+                </div><!-- /.homeblock-about__slider_slider -->
+              </div><!-- /.homeblock-about__slider_container -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+      </div><!-- /.homeblock-about -->
+
+      <div class="homeblock-cards">
+        <div class="container">
+          <div class="row">
+            <div class="cards-item cards-item--1 col-xl-4">
+              <i class="icon-card icon-card--1"></i>
+              <h3>Карта рождения</h3>
+              <p>Момент рождения определяет сценарий вашей жизни и ваш путь в этом мире. Знание, которое открывается через карту...</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--1 col-xl-4 -->
+            <div class="cards-item cards-item--2 col-xl-4">
+              <i class="icon-card icon-card--2"></i>
+              <h3>Карта годового цикла</h3>
+              <p>Эта карта подобна проектному плану, согласно которому вы определяетесь, чем вам предстоит заниматься в течение своего...</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--2 col-xl-4 -->
+            <div class="cards-item cards-item--3 col-xl-4">
+              <i class="icon-card icon-card--3"></i>
+              <h3>Карта совместимости</h3>
+              <p>В отношениях с  каждым человеком для нас обозначен определенный путь развития и уникальный жизненный опыт.</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--3 col-xl-4 -->
+            <div class="cards-item cards-item--4 col-xl-4">
+              <i class="icon-card icon-card--4"></i>
+              <h3>Карта транзитов</h3>
+              <p>Отправляясь в путешествие, вы  интересуетесь  погодными условиями, чтобы счастливо провести время и быть подготовленными...</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--4 col-xl-4 -->
+            <div class="cards-item cards-item--5 col-xl-4">
+              <i class="icon-card icon-card--5"></i>
+              <h3>Карта вашего ребенка</h3>
+              <p>Насколько счастливо и благополучно сложится жизненный путь вашего ребенка напрямую зависит от  того  отношения которое…</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--5 col-xl-4 -->
+            <div class="cards-item cards-item--6 col-xl-4">
+              <i class="icon-card icon-card--6"></i>
+              <h3>Карта ответа на вопрос</h3>
+              <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.  Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--6 col-xl-4 -->
+            <div class="cards-item cards-item--7 col-xl-4">
+              <i class="icon-card icon-card--7"></i>
+              <h3>Выбор благоприятного момента</h3>
+              <p>Знаете ли вы, что момент начала любого действия определяет развитие и исход ситуации?  Знание благоприятного момента...</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--7 col-xl-4 -->
+            <div class="cards-item cards-item--8 col-xl-4">
+              <i class="icon-card icon-card--8"></i>
+              <h3>Астропсихологическая коррекция </h3>
+              <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--8 col-xl-4 -->
+            <div class="cards-item cards-item--9 col-xl-4">
+              <i class="icon-card icon-card--9"></i>
+              <h3>Индивидуальное сопровождение</h3>
+              <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
+              <a href="">Подробнее</a>
+            </div>
+            <!-- /.cards-item cards-item--9 col-xl-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- /.homeblock-cards -->
+
+      <div class="homeblock-halftext">
+        <div class="container">
+            <div class="row">
+              <div class="col-xl-7">
+                <div class="h3 homeblock-halftext__title">Джйотиш</div>
+                <p>Джйотиш - ведическая астрология как традиция древнего знания и духовная наука о взаимосвязи человека и Вселенной помогает  нам найти свой путь, узнать в чем заключена  наша сила и последовать своему предназначению.</p>
+                <p>Мы все приходим в этот мир, имея уникальные дарования и таланты. Знание о том, в чем заключен ваш потенциал позволяет вам с уверенностью проявлять себя и достигать успеха.</p>
+                <p>Свет этого знания затрагивает глубины вашего существа и пробуждает память о том, кто вы и за чем вы здесь.</p>
+                <p>Карту рождения человека можно рассматривать и трактовать именно в этом контексте.  Благодаря такой трактовке вы получите  практические инструменты для самореализации, для творческого и осмысленного проживания Жизни и следования геометрии своей Судьбы.</p>
+                <a href="">выбрать консультацию</a>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+      </div><!-- /.homeblock-halftext -->
+
+      <div class="homeblock-news">
+        <div class="container">
+            <div class="row">
+              <h4 class="homeblock-news--title col-xl-12">Новости</h4>
+
+              <div class="homeblock-news--item col-xl-8 offset-2">
+                <div class="homeblock-news--headline">
+                  <a href="" class="hnh-cat">Семинар</a><span class="hnh-date">Дата публикации: <span>24 октября 2018</span></span>
+                </div><!-- /.homeblock-news--headline -->
+                <h3 class="homeblock-news--name"><a href="">Основы художественного ремесла.</a></h3>
+                <p>В данной книге автором проводится анализ всех мировых религий и рассказывается о галактическом культе русского народа, который был на нашей земле несколько тысяч…</p>
+                <a href="" class="homeblock-news--item_more">Подробнее</a>
+              </div><!-- /.homeblock-news--item col-xl-8 offset-2 -->
+
+              <div class="homeblock-news--item col-xl-8 offset-2">
+                <div class="homeblock-news--headline">
+                  <a href="" class="hnh-cat">Семинар</a><span class="hnh-date">Дата публикации: <span>24 октября 2018</span></span>
+                </div><!-- /.homeblock-news--headline -->
+                <h3 class="homeblock-news--name"><a href="">Основы художественного ремесла.</a></h3>
+                <p>В данной книге автором проводится анализ всех мировых религий и рассказывается о галактическом культе русского народа, который был на нашей земле несколько тысяч…</p>
+                <a href="" class="homeblock-news--item_more">Подробнее</a>
+              </div><!-- /.homeblock-news--item col-xl-8 offset-2 -->
+
+              <div class="homeblock-news--item col-xl-8 offset-2">
+                <div class="homeblock-news--headline">
+                  <a href="" class="hnh-cat">Семинар</a><span class="hnh-date">Дата публикации: <span>24 октября 2018</span></span>
+                </div><!-- /.homeblock-news--headline -->
+                <h3 class="homeblock-news--name"><a href="">Основы художественного ремесла.</a></h3>
+                <p>В данной книге автором проводится анализ всех мировых религий и рассказывается о галактическом культе русского народа, который был на нашей земле несколько тысяч…</p>
+                <a href="" class="homeblock-news--item_more">Подробнее</a>
+              </div><!-- /.homeblock-news--item col-xl-8 offset-2 -->
+
+              <div class="homeblock-news--item col-xl-8 offset-2">
+                <div class="homeblock-news--headline">
+                  <a href="" class="hnh-cat">Семинар</a><span class="hnh-date">Дата публикации: <span>24 октября 2018</span></span>
+                </div><!-- /.homeblock-news--headline -->
+                <h3 class="homeblock-news--name"><a href="">Основы художественного ремесла.</a></h3>
+                <p>В данной книге автором проводится анализ всех мировых религий и рассказывается о галактическом культе русского народа, который был на нашей земле несколько тысяч…</p>
+                <a href="" class="homeblock-news--item_more">Подробнее</a>
+              </div><!-- /.homeblock-news--item col-xl-8 offset-2 -->
+
+              <div class="homeblock-news--more col-xl-10 offset-xl-1">
+                <a href="">Все новости</a>
+              </div><!-- /.homeblock-news--more col-xl-10 -->
+
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+      </div><!-- /.homeblock-news -->
+
+    </section><!-- /section -->
+  </div><!-- /wrapper -->
+
+  <footer role="contentinfo">
+    <div class="container">
       <div class="row">
 
-        <div class="header--logo col-xl-2">
-          <img src="img/logo.png" alt="" title="">
-        </div><!-- /header--logo -->
+        <div class="footer-logo col-xl-4"></div>
 
-        <nav class="header--nav col-xl-4 offset-xl-4" role="navigation">
-          <ul class="headnav">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Консультации</a></li>
-            <li><a href="#">Новости</a></li>
+        <div class="footer--social col-xl-4">
+          <ul>
+            <li><a href=""><i class="ico-soc ico-soc--fb"></i>facebook</a></li>
+            <li><a href=""><i class="ico-soc ico-soc--in"></i>instagram</a></li>
+            <li><a href=""><i class="ico-soc ico-soc--yt"></i>youtube</a></li>
           </ul>
-        </nav><!-- /header--nav -->
+          <p class="footer--copyright">
+            © 2018 Собственность. Работает на html2wp easy.
+          </p>
+        </div><!-- /.footer--social -->
 
-        <div class="header--phone col-xl-2">
-          <a href="tel:0974584565" class="header--phone__phone">097 458 45 65</a>
-          <p>Доступный в <a class="header--phone__viber" href="">Viber</a></p>
-        </div><!-- /header--phone -->
+        <div class="footer--contacts col-xl-4">
+          <a href="te:+380974584565" class="footer--social__phone">+38 097 458 45 65</a>
+          <a href="mailto:miracledevama@gmail.com" class="footer--social__email">miracledevama@gmail.com</a>
+        </div><!-- /.footer--contacts col-xl-4 -->
 
       </div><!-- /.row -->
     </div><!-- /.container -->
-  </header><!-- /header -->
+  </footer><!-- /footer -->
 
-  <section role="main">
-
-    <div class="homeblock-headline">
-      <div class="container-fluid">
-          <div class="row">
-            <h4 class="homeblock-headline__title">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
-            <h5 class="homeblock-headline__description">У тебя есть твой путь <span>Следуя своему пути ты будешь счастлив.</span></h5>
-            <button class="homeblock-headline__more">Узнать больше</button>
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.homeblock-headline -->
-
-    <div class="homeblock-about">
-      <div class="container-fluid">
-          <div class="row">
-            <h2 class="homeblock-about__title col-xl-12">Обо мне</h2>
-            <div class="homeblock-about__content col-xl-6 offset-xl-6">
-              <p>Елена Ма - ведический астролог, гид Системы Дизайна Человека.  Астропсихолог, эксперт по теме человеческих взаимоотношений и самореализации женщины. </p>
-              <p>Автор и ведущая семинаров по личностному росту и духовному развитию человека. Основатель образовательно-просветительского центра «Геометрия  Судьбы».</p>
-              <a href="#">Читать больше</a>
-            </div><!-- /.homeblock-about__content col-xl-6 offset-xl-6 -->
-            <div class="homeblock-about__slider_title col-xl-8 offset-xl-2">Мои консультации<span>помогут вам:</span></div><!-- /.homeblock-about__slider_title -->
-            <div class="homeblock-about__slider_container">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum ipsam in excepturi, laboriosam porro quis praesentium sunt quaerat qui unde ex harum quas aliquam voluptates tempore natus aspernatur! Voluptas?
-            </div><!-- /.homeblock-about__slider_container -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.homeblock-about -->
-
-    <div class="homeblock-cards">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="cards-item cards-item--1 col-xl-4">
-            <h3>Карта рождения</h3>
-            <p>Момент рождения определяет сценарий вашей жизни и ваш путь в этом мире. Знание, которое открывается через карту...</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--1 col-xl-4 -->
-          <div class="cards-item cards-item--2 col-xl-4">
-            <h3>Карта годового цикла</h3>
-            <p>Эта карта подобна проектному плану, согласно которому вы определяетесь, чем вам предстоит заниматься в течение своего...</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--2 col-xl-4 -->
-          <div class="cards-item cards-item--3 col-xl-4">
-            <h3>Карта совместимости</h3>
-            <p>В отношениях с  каждым человеком для нас обозначен определенный путь развития и уникальный жизненный опыт.</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--3 col-xl-4 -->
-          <div class="cards-item cards-item--4 col-xl-4">
-            <h3>Карта транзитов</h3>
-            <p>Отправляясь в путешествие, вы  интересуетесь  погодными условиями, чтобы счастливо провести время и быть подготовленными...</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--4 col-xl-4 -->
-          <div class="cards-item cards-item--5 col-xl-4">
-            <h3>Карта вашего ребенка</h3>
-            <p>Насколько счастливо и благополучно сложится жизненный путь вашего ребенка напрямую зависит от  того  отношения которое…</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--5 col-xl-4 -->
-          <div class="cards-item cards-item--6 col-xl-4">
-            <h3>Карта ответа на вопрос</h3>
-            <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.  Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--6 col-xl-4 -->
-          <div class="cards-item cards-item--7 col-xl-4">
-            <h3>Выбор благоприятного момента</h3>
-            <p>Знаете ли вы, что момент начала любого действия определяет развитие и исход ситуации?  Знание благоприятного момента...</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--7 col-xl-4 -->
-          <div class="cards-item cards-item--8 col-xl-4">
-            <h3>Астропсихологическая коррекция </h3>
-            <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--8 col-xl-4 -->
-          <div class="cards-item cards-item--9 col-xl-4">
-            <h3>Индивидуальное сопровождение</h3>
-            <p>Информация по карте года позволит вам наиболее эффективно направить свои усилия и спланировать свои дела.</p>
-            <a href="">Подробнее</a>
-          </div>
-          <!-- /.cards-item cards-item--9 col-xl-4 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </div>
-    <!-- /.homeblock-cards -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="homeblock-1">
-      <div class="container-fluid">
-          <div class="row">
-
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.homeblock-1 -->
-
-    <div class="homeblock-1">
-      <div class="container-fluid">
-          <div class="row">
-
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.homeblock-1 -->
-
-    <div class="homeblock-1">
-      <div class="container-fluid">
-          <div class="row">
-
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.homeblock-1 -->
-
-
-  </section><!-- /section -->
-</div><!-- /wrapper -->
-
-<footer role="contentinfo">
-  <div class="container">
-    <div class="row">
-
-      <p class="copyright col-md-12">
-        © 2018 Собственность. Работает на html2wp easy.
-      </p><!-- /copyright -->
-
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</footer><!-- /footer -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>

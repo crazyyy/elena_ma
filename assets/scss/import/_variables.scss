@@ -1,7 +1,8 @@
 // Font Sizes
 $base-font-size: 16px;
 $em-base: $base-font-size;
-$base-font-family: 'Roboto Condensed', sans-serif;
+$base-font-family: 'Istok Web', sans-serif;
+$cormo-font-family: 'Cormorant Garamond', serif;
 $heading-font-family: $base-font-family;
 
 // font weight
@@ -21,7 +22,7 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $width: 980px;
-$footer: 50px;
+$footer: 260px;
 $footer_margin: $footer - 2 * $footer;
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
@@ -29,12 +30,14 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$orange: orange;
+$orange: #f89e2f;
+$violet: #5c0184;
+$black: #141414;
 $red: red;
 $blue: #477dca;
-$gray-medium: #999;
-$gray-dark: #333;
-$gray-light: #ddd;
+$gray-medium: #2f2f2f;
+$gray-dark: #363636;
+$gray-light: #929292;
 
 // Font Colors
 $base-font-color: $gray-dark;

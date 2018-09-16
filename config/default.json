@@ -1,6 +1,6 @@
 {
-  "domain": "wp-framework.dev",
-  "theme": "wp-framework",
+  "domain": "elenama.local",
+  "theme": "wp-elenama",
   "path": {
     "base": {
       "src":"assets/",
@@ -32,7 +32,7 @@
   },
   "sprite": {
     "imgName": "_sprite_png.png",
-    "cssName": "_sprite_png.less",
+    "cssName": "_sprite_png.scss",
     "imgPath": "../img/_sprite_png.png"
   }
 }

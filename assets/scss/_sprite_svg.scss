@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/_sprite_svg.svg");
     background-repeat: no-repeat;
-    background-size: 7.5em 60em;
+    background-size: 7.5em 75em;
 }
 
 .no-svg .svgico:before {
@@ -17,7 +17,7 @@
 
 
 
-  .svgico.svgico-menu:before {
+  .svgico.svgico-close:before {
       background-position: -0.3125em -0.3125em;
       width: 6.875em;
       height: 6.875em;
@@ -26,7 +26,7 @@
 
 
 
-  .svgico.svgico-more:before {
+  .svgico.svgico-menu:before {
       background-position: -0.3125em -7.8125em;
       width: 6.875em;
       height: 6.875em;
@@ -35,7 +35,7 @@
 
 
 
-  .svgico.svgico-phone:before {
+  .svgico.svgico-more:before {
       background-position: -0.3125em -15.3125em;
       width: 6.875em;
       height: 6.875em;
@@ -44,7 +44,7 @@
 
 
 
-  .svgico.svgico-play:before {
+  .svgico.svgico-phone:before {
       background-position: -0.3125em -22.8125em;
       width: 6.875em;
       height: 6.875em;
@@ -53,7 +53,7 @@
 
 
 
-  .svgico.svgico-share:before {
+  .svgico.svgico-play:before {
       background-position: -0.3125em -30.3125em;
       width: 6.875em;
       height: 6.875em;
@@ -62,7 +62,7 @@
 
 
 
-  .svgico.svgico-soc_fb:before {
+  .svgico.svgico-share:before {
       background-position: -0.3125em -37.8125em;
       width: 6.875em;
       height: 6.875em;
@@ -71,7 +71,7 @@
 
 
 
-  .svgico.svgico-soc_in:before {
+  .svgico.svgico-soc_fb:before {
       background-position: -0.3125em -45.3125em;
       width: 6.875em;
       height: 6.875em;
@@ -80,8 +80,26 @@
 
 
 
-  .svgico.svgico-soc_yt:before {
+  .svgico.svgico-soc_fb-orange:before {
       background-position: -0.3125em -52.8125em;
+      width: 6.875em;
+      height: 6.875em;
+  }
+
+
+
+
+  .svgico.svgico-soc_in:before {
+      background-position: -0.3125em -60.3125em;
+      width: 6.875em;
+      height: 6.875em;
+  }
+
+
+
+
+  .svgico.svgico-soc_yt:before {
+      background-position: -0.3125em -67.8125em;
       width: 6.875em;
       height: 6.875em;
   }

@@ -1,34 +1,36 @@
 <?php get_header(); ?>
 
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="page-inner">
+  <div class="container">
+    <div class="row">
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+      <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class('col-xl-8 offset-xl-2'); ?>>
+          <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+          <div class="looper--headline">
+            <?php the_category(', '); ?><span class="hnh-date">Дата публикации: <span><?php the_time('j F Y'); ?></span></span>
+          </div><!-- /.looper--headline -->
+          <h1 class="inner-title"><?php the_title(); ?></h1>
+          <div class="article--share">
+            <a href="#" class="article--share__fb"><i class="ico-soc--share_fb"></i>читать на facebook</a>
+            <a href="#" class="article--share__share"><i class="ico-soc--share"></i>Расказать друзям</a>
+          </div>
+          <!-- /.article--share -->
+          <?php the_content(); ?>
+          <?php edit_post_link(); ?>
+        </article>
+      <?php endwhile; endif; ?>
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
+      <h4 class="recent-news col-xl-8 offset-xl-2">Последние новости</h4>
+      <?php query_posts("showposts=4"); ?>
+        <?php get_template_part('loop'); ?>
+      <?php wp_reset_query(); ?>
 
-      <?php the_content(); ?>
-
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
-
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
-
-      <?php edit_post_link(); ?>
-
-      <?php comments_template(); ?>
-
-    </article>
-  <?php endwhile; endif; ?>
-
-  <?php get_sidebar(); ?>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.page-inner -->
 
 <?php get_footer(); ?>

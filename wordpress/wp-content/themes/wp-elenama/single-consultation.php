@@ -1,5 +1,16 @@
 <?php get_header(); ?>
 
+  <div class="single-consult--header">
+    <div class="container">
+      <div class="row">
+        <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.single-consult--header -->
+
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -13,7 +24,6 @@
       <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
       <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
       <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
-
       <?php the_content(); ?>
 
       <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>

@@ -1,15 +1,20 @@
-<?php get_header(); ?>
+<?php /* Template Name: News Page */ get_header(); ?>
 
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
-
-    </article>
-  <?php endwhile; endif; ?>
-
-  <?php get_sidebar(); ?>
+  <div class="news-list">
+    <div class="container">
+      <div class="row">
+        <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+        <div class="news-list--title col-xl-12"><?php the_title(); ?></div>
+        <ul class="news-list--catlist col-xl-12">
+          <?php wp_list_categories( 'orderby=name&title_li=' ); ?>
+        </ul>
+        <?php get_template_part('loop'); ?>
+        <?php get_template_part('pagination'); ?>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.news-list -->
 
 <?php get_footer(); ?>

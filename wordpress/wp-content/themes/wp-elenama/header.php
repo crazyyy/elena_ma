@@ -52,7 +52,7 @@
           </nav><!-- /header--nav -->
 
           <div class="header--phone col-xl-2">
-            <a href="tel:+380974584565" class="header--phone__phone"><i class="ico-phone"></i>097 458 45 65</a>
+            <a href="tel:+380504802828" class="header--phone__phone"><i class="ico-phone"></i>050 480 28 28</a>
             <p>Доступный в <a class="header--phone__viber" href="">Viber</a></p>
           </div><!-- /header--phone -->
 

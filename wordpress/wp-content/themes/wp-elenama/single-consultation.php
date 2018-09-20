@@ -1,44 +1,48 @@
 <?php get_header(); ?>
 
-  <div class="single-consult--header">
-    <div class="container">
-      <div class="row">
-        <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.single-consult--header -->
-
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+    <?php $image = get_field('single_header_background');
+      if( !empty($image) ) {
+        $bgi = $image['url'];
+      } else {
+        $bgi  = get_template_directory_uri() . '/img/karta-vashego-rebenka.jpg';
+      }
+    ?>
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
-      <?php the_content(); ?>
+    <div class="single-consult--header" style="background-image: url(<?php echo $bgi ; ?>);">
+      <div class="container">
+        <div class="row">
+          <div class="single-consult--breadcrumbs col-xl-6 offset-xl-2">
+            <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+          </div><!-- /.single-consult--breadcrumbs -->
+          <h1 class="inner-title col-xl-6 offset-xl-2"><?php the_title(); ?></h1>
+          <p class="col-xl-6 offset-xl-2">Знаете ли вы, что момент начала любого действия определяет развитие и исход ситуации? Знание благоприятного момента – залог успешного развития ситуации и получения счастливого результата.</p>
+          <div class="single-consult--buttons col-xl-6 offset-xl-2">
+            <a class="single-consult--order" href="#">Онлайн запись</a> <a href="https://www.youtube.com/watch?v=MdYGQ7B0Vew" rel="lightbox" class="single-consult--video"><i class="svgico svgico-play"></i>Коротко о консультации</a>
+          </div><!-- /.single-consult--buttons -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.single-consult--header -->
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+    <div class="single-consult--content">
+      <div class="container">
+        <div class="row">
+          <article id="post-<?php the_ID(); ?>" <?php post_class('col-xl-9'); ?>>
+            <?php the_content(); ?>
+          </article>
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+          <?php get_sidebar(); ?>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.single-consult--content -->
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
-
-      <?php edit_post_link(); ?>
-
-      <?php comments_template(); ?>
-
-    </article>
   <?php endwhile; endif; ?>
-
-  <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

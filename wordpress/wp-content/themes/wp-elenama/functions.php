@@ -691,8 +691,8 @@ function disable_emojicons_tinymce( $plugins ) {
 add_action( 'init', 'post_type_consultation' );
 function post_type_consultation() {
   $labels = array(
-    'name' => 'Consultation',
-    'singular_name' => 'Consultation',
+    'name' => 'Консультации',
+    'singular_name' => 'Консультации',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',

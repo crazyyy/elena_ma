@@ -12,15 +12,121 @@
 @include media-breakpoint-down(lg) {
 
 }
+@media (min-width: 768px) and (max-width: 880px) {
+  .homeblock-headline {
+    background-position: 250% top;
+  }
+}
 // col-md-# ( ≥768px)
 @include media-breakpoint-down(md) {
+  .homeblock-headline {
+    background-image: url(../img/bg-homeblock-headline-md.png);
+    background-position: center 70px;
+    background-size: 70%;
+    .homeblock-headline__title {
+      padding-top: 50vh;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 7vw;
+      &:before {
+        display: none;
+      }
+      span {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 2vh;
 
+        display: block;
+
+        width: auto;
+      }
+    }
+    .homeblock-headline__description {
+      font-size: 7vw;
+      line-height: 1;
+      text-align: center;
+      .homeblock-headline__small {
+        font-size: 2vh;
+      }
+    }
+    .homeblock-headline__more {
+      bottom: 5vh;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .homeblock-headline {
+    background-position: center 80px;
+    background-size: 80%;
+  }
 }
 // col-sm-# ( ≥576px)
 @include media-breakpoint-down(sm) {
-
+  header {
+    .header--logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .header--phone__phone {
+      margin-bottom: 10px;
+      padding-top: 30px;
+      padding-right: 15px;
+    }
+    .header--phone {
+      p {
+        padding-right: 20px;
+      }
+    }
+  }
+  .header--phone {
+    margin-left: 16.66667%;
+  }
 }
-// col-sm-# ( <575.5px)
+// col-# ( <575.5px)
 @include media-breakpoint-down(xs) {
+  header  {
+    .header--nav {
+      padding-top: 20px;
+    }
+    .header--phone {
+      padding-top: 0;
+    }
+  }
+  .header--logo {
+    flex: 0 0 33.33333%;
 
+    max-width: 33.33333%;
+  }
+  .header--nav {
+    -webkit-box-flex: 0;
+    flex: 0 0 66.66667%;
+
+    max-width: 66.66667%;
+    margin-left: 33.33333%;
+    ul {
+      text-align: right;
+    }
+    li {
+      display: block;
+
+      margin-bottom: 10px;
+
+    }
+  }
+  .header--phone {
+    -webkit-box-flex: 0;
+    flex: 0 0 66.66667%;
+
+    max-width: 66.66667%;
+    margin-left: 33.33333%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    .header--phone {
+      display: none;
+    }
+  }
 }

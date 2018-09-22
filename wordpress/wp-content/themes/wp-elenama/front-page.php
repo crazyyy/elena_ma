@@ -7,8 +7,8 @@
 
         <div class="homeblock-headline--container">
           <div class="row">
-            <h4 class="homeblock-headline__title col-xl-8 offset-xl-2">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
-            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
+            <h4 class="homeblock-headline__title col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
+            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3 col-lg-6 offset-lg-1 col-md-8">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
           </div><!-- /.row -->
           <a href="#homeblock-about" class="homeblock-headline__more"><i class="ico-more"></i>Узнать больше</a>
         </div>

@@ -273,6 +273,14 @@
   4px 4px 0 darken($color, 20%),
   4px 4px 2px #000;
 }
+@mixin text2d($color1, $color2) {
+  color: $color1;
+  text-shadow: 1px 1px 0 darken($color2, 5%),
+  2px 2px 0 darken($color2, 10%),
+  3px 3px 0 darken($color2, 15%),
+  4px 4px 0 darken($color2, 20%),
+  4px 4px 2px #000;
+}
 /*
 * placeholder mixin
 * https: //stackoverflow.com/questions/17181849/placeholder-mixin-scss-css

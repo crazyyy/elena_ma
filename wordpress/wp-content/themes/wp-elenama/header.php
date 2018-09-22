@@ -37,7 +37,7 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="header--logo col-xl-2">
+          <div class="header--logo col-xl-2 col-lg-2 col-md-2 col-sm-2">
             <?php if ( !is_front_page() && !is_home() ){ ?>
               <a href="<?php echo home_url(); ?>">
             <?php } ?>
@@ -47,11 +47,11 @@
             <?php } ?>
           </div><!-- /header--logo -->
 
-          <nav class="header--nav col-xl-4 offset-xl-4" role="navigation">
+          <nav class="header--nav col-xl-4 offset-xl-4 col-lg-5 offset-lg-3 col-md-7 offset-md-0 col-sm-10 offset-sm-2" role="navigation">
             <?php wpeHeadNav(); ?>
           </nav><!-- /header--nav -->
 
-          <div class="header--phone col-xl-2">
+          <div class="header--phone col-xl-2 col-lg-2 col-md-3 col-sm-10">
             <a href="tel:+380504802828" class="header--phone__phone"><i class="ico-phone"></i>050 480 28 28</a>
             <p>Доступный в <a class="header--phone__viber" href="">Viber</a></p>
           </div><!-- /header--phone -->

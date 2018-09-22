@@ -3954,6 +3954,112 @@ footer .footer--social__email {
   }
 }
 
+@media (min-width: 768px) and (max-width: 880px) {
+  .homeblock-headline {
+    background-position: 250% top;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .homeblock-headline {
+    background-image: url(../img/bg-homeblock-headline-md.png);
+    background-position: center 70px;
+    background-size: 70%;
+  }
+  .homeblock-headline .homeblock-headline__title {
+    padding-top: 50vh;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 7vw;
+  }
+  .homeblock-headline .homeblock-headline__title:before {
+    display: none;
+  }
+  .homeblock-headline .homeblock-headline__title span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2vh;
+    display: block;
+    width: auto;
+  }
+  .homeblock-headline .homeblock-headline__description {
+    font-size: 7vw;
+    line-height: 1;
+    text-align: center;
+  }
+  .homeblock-headline .homeblock-headline__description .homeblock-headline__small {
+    font-size: 2vh;
+  }
+  .homeblock-headline .homeblock-headline__more {
+    bottom: 5vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .homeblock-headline {
+    background-position: center 80px;
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header .header--logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header .header--phone__phone {
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+  header .header--phone p {
+    padding-right: 20px;
+  }
+  .header--phone {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header .header--nav {
+    padding-top: 20px;
+  }
+  header .header--phone {
+    padding-top: 0;
+  }
+  .header--logo {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .header--nav {
+    -webkit-box-flex: 0;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    margin-left: 33.33333%;
+  }
+  .header--nav ul {
+    text-align: right;
+  }
+  .header--nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .header--phone {
+    -webkit-box-flex: 0;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    margin-left: 33.33333%;
+  }
+}
+
+@media (max-width: 400px) {
+  header .header--phone {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: 'Roboto Condensed';
   font-weight: 300;

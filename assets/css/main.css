@@ -3596,6 +3596,7 @@ nav ul li {
 }
 
 .single-consult--header {
+  position: relative;
   height: 100vh;
   padding-top: 16vh;
   background-repeat: no-repeat;
@@ -3650,8 +3651,8 @@ nav ul li {
 }
 
 .single-consult--header .single-consult--order:hover {
-  background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
   color: #f89e2f;
+  background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
 }
 
 .single-consult--header .single-consult--video {
@@ -3670,6 +3671,89 @@ nav ul li {
   opacity: 0.8;
 }
 
+.single-consult--header .single-consult-headline__more {
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+  height: 20px;
+  padding: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f89e2f;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.single-consult--header .single-consult-headline__more .ico-more {
+  position: relative;
+  top: -5px;
+  margin-right: 10px;
+}
+
+#html5-watermark {
+  display: !important;
+}
+
+.single-consult--content {
+  padding-top: 80px;
+}
+
+.single-consult--content article {
+  color: #141414;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.single-consult--content article h1, .single-consult--content article h2, .single-consult--content article h3 {
+  color: #363636;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.2;
+}
+
+.single-consult--content article h1 {
+  font-size: 32px;
+}
+
+.single-consult--content article h2 {
+  font-size: 28px;
+}
+
+.single-consult--content article h3 {
+  font-size: 26px;
+}
+
+.single-consult--content article ol, .single-consult--content article ul {
+  display: inline-flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.single-consult--content article ol li, .single-consult--content article ul li {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  line-height: 24px;
+}
+
+.single-consult--content article ol li:before, .single-consult--content article ul li:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 3px;
+  content: '';
+  background-color: #f89e2f;
+}
+
 section {
   padding: 0 0 260px;
 }
@@ -3680,6 +3764,100 @@ article {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+article .slick-slider.gallery .slick-next, article .slick-slider.gallery .slick-prev {
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+}
+
+article .slick-slider.gallery .slick-next:before, article .slick-slider.gallery .slick-prev:before {
+  font-size: 40px;
+  color: #f89e2f;
+}
+
+article .slick-slider.gallery .slick-next {
+  right: 25px;
+}
+
+article .slick-slider.gallery .slick-prev {
+  left: 25px;
+}
+
+article .slick-slider.gallery img {
+  width: 100%;
+}
+
+aside .widget {
+  padding: 30px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.11);
+}
+
+aside .widget h6 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #363636;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+aside .widget .wpcf7-form {
+  position: relative;
+  text-align: center;
+}
+
+aside .widget .wpcf7-form .form-bottom {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  left: 0;
+  text-align: left;
+  opacity: 0.6;
+  color: #141414;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+aside .widget label {
+  text-align: left;
+  opacity: 0.8;
+  color: #141414;
+  font-size: 13px;
+}
+
+aside .widget label span {
+  display: block;
+  padding-top: 4px;
+}
+
+aside .widget input[type=text] {
+  height: 46px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+aside .widget input[type=submit] {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 26px 35px;
+  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #ff6b6b 0%, #fca451 100%);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.17);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+aside .widget input[type=submit]:hover {
+  color: #f89e2f;
+  background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
 }
 
 .page-consult .inner-title,

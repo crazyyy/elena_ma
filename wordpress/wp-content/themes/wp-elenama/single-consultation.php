@@ -17,18 +17,19 @@
             <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
           </div><!-- /.single-consult--breadcrumbs -->
           <h1 class="inner-title col-xl-6 offset-xl-2"><?php the_title(); ?></h1>
-          <p class="col-xl-6 offset-xl-2">Знаете ли вы, что момент начала любого действия определяет развитие и исход ситуации? Знание благоприятного момента – залог успешного развития ситуации и получения счастливого результата.</p>
+          <p class="col-xl-6 offset-xl-2"><?php the_field('short_description'); ?></p>
           <div class="single-consult--buttons col-xl-6 offset-xl-2">
-            <a class="single-consult--order" href="#">Онлайн запись</a> <a href="https://www.youtube.com/watch?v=MdYGQ7B0Vew" rel="lightbox" class="single-consult--video"><i class="svgico svgico-play"></i>Коротко о консультации</a>
+            <a class="single-consult--order" href="#">Онлайн запись</a> <a href="JavaScript:html5Lightbox.showLightbox(3, 'https://www.youtube.com/embed/<?php the_field('youtube'); ?>');" rel="lightbox" class="single-consult--video"><i class="svgico svgico-play"></i>Коротко о консультации</a>
           </div><!-- /.single-consult--buttons -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
+      <a href="#consult-about" class="single-consult-headline__more"><i class="ico-more"></i>Узнать больше</a>
     </div>
     <!-- /.single-consult--header -->
 
-    <div class="single-consult--content">
+    <div class="single-consult--content" id="consult-about">
       <div class="container">
         <div class="row">
           <article id="post-<?php the_ID(); ?>" <?php post_class('col-xl-9'); ?>>

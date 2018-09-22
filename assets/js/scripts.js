@@ -51,6 +51,13 @@ $(document).ready(function(){
     arrows: false,
     dots: true
   });
+  $( ".gallery br" ).each(function( index ) {
+    $(this).remove();
+  });
+  $('article .gallery').slick({
+    arrows: true,
+    dots: false
+  });
 
   $("a[href*='#']:not([href='#'])").click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -63,6 +70,14 @@ $(document).ready(function(){
       return false;
     }
   }
- });
+  });
+
+  $('.single-consult--buttons').on('click', '.single-consult--video', function(){
+    setTimeout(() => {
+      $("#html5box-html5-lightbox").contents().find("#html5-watermark").attr("style","display:none;")
+    }, 3000);
+  })
+
+
 
 });

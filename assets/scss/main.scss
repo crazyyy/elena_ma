@@ -1092,6 +1092,8 @@ nav {
   }
 }
 .single-consult--header {
+  position: relative;
+
   height: 100vh;
   padding-top: 16vh;
 
@@ -1151,8 +1153,8 @@ nav {
     font-size: 14px;
     font-weight: 700;
     &:hover{
-      background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
       color: $orange;
+      background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
     }
   }
   .single-consult--video {
@@ -1171,12 +1173,93 @@ nav {
       opacity: 0.8;
     }
   }
-}
-.single-consult--content {
-  article {
+  .single-consult-headline__more {
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
 
+    height: 20px;
+    padding: 0;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: $orange;
+    border-radius: 0;
+    background-color: transparent;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    .ico-more  {
+      position: relative;
+      top: -5px;
+
+      margin-right: 10px;
+    }
   }
 }
+#html5-watermark {
+  display:  !important;
+}
+.single-consult--content {
+  padding-top: 80px;
+  article {
+    color: $black;
+
+    font-size: 16px;
+    line-height: 26px;
+    h1,h2,h3 {
+      color: $gray-dark;
+
+      font-family: $cormo-font-family;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 26px;
+    }
+    ol, ul {
+      display: inline-flex;
+      align-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        position: relative;
+
+        display: inline-block;
+
+        width: 48%;
+        margin-bottom: 30px;
+        padding-left: 20px;
+
+        line-height: 24px;
+        &:before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+
+          display: block;
+
+          width: 3px;
+
+          content: '';
+
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
+
 section {
   padding: 0 0 $footer;
 }
@@ -1190,6 +1273,110 @@ article {
   line-height: 26px;
 
   @extend .clearfix;
+  .slick-slider.gallery {
+    .slick-next, .slick-prev {
+      z-index: 5;
+
+      width: 50px;
+      height: 50px;
+      &:before {
+        font-size: 40px;
+        color: $orange;
+      }
+
+    }
+    .slick-next {
+      right: 25px;
+    }
+    .slick-prev {
+      left: 25px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+aside {
+  .widget {
+    padding: 30px 24px;
+
+    background-color: #ffffff;
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.11);
+
+    h6 {
+      margin-bottom: 20px;
+
+      text-align: center;
+
+      color: $gray-dark;
+
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .wpcf7-form {
+      position: relative;
+
+      text-align: center;
+      .form-bottom {
+        position: absolute;
+        right: 0;
+        bottom: -130px;
+        left: 0;
+
+        text-align: left;
+
+        opacity: 0.6;
+        color: #141414;
+
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    label {
+      text-align: left;
+
+      opacity: 0.8;
+      color: $black;
+
+      font-size: 13px;
+      span {
+        display: block;
+
+        padding-top: 4px;
+      }
+    }
+
+    input[type=text]{
+      height: 46px;
+
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      border-radius: 3px;
+      background-color: #f9f9f9;
+    }
+    input[type=submit]{
+      display: inline-block;
+
+      margin: 0 auto;
+      padding: 26px 35px;
+
+      transition: $base-transition;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      border-radius: 30px;
+      background-image: linear-gradient(45deg, #ff6b6b 0%, #fca451 100%);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.17);
+
+      font-size: 14px;
+      font-weight: 700;
+      &:hover{
+        color: $orange;
+        background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
+      }
+    }
+  }
 }
 .looper {
   @extend .clearfix;

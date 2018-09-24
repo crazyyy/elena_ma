@@ -1130,6 +1130,15 @@ nav {
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
+    position: relative;
+  }
+  .icon-card {
+    filter: grayscale(0);
+    position: absolute;
+    transform: scale(0.2);
+    position: absolute;
+    left: -240px;
+    top: -160px;
   }
   p {
     margin-bottom: 90px;

@@ -101,6 +101,18 @@
       background-position: center;
     }
   }
+  .single-consult--header {
+    .single-consult--breadcrumbs {
+      margin-bottom: 30px;
+    }
+    .inner-title {
+      padding-top: 100px;
+    }
+    .icon-card {
+      top: -160px;
+      left: -150px;
+    }
+  }
   section {
     padding: 0;
   }
@@ -200,6 +212,7 @@
     .single-consult-headline__more {
       display: none;
     }
+
   }
   .news-list, .page-inner {
     padding-top: 210px;

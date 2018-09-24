@@ -3634,6 +3634,16 @@ nav ul li {
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+  position: relative;
+}
+
+.single-consult--header .icon-card {
+  filter: grayscale(0);
+  position: absolute;
+  transform: scale(0.2);
+  position: absolute;
+  left: -240px;
+  top: -160px;
 }
 
 .single-consult--header p {
@@ -4051,6 +4061,16 @@ footer .footer--social__email {
   }
   .homeblock-halftext--content .homeblock-halftext--image {
     background-position: center;
+  }
+  .single-consult--header .single-consult--breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .single-consult--header .inner-title {
+    padding-top: 100px;
+  }
+  .single-consult--header .icon-card {
+    top: -160px;
+    left: -150px;
   }
   section {
     padding: 0;

@@ -16,7 +16,7 @@
           <div class="single-consult--breadcrumbs col-xl-6 offset-xl-2">
             <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
           </div><!-- /.single-consult--breadcrumbs -->
-          <h1 class="inner-title col-xl-6 offset-xl-2"><?php the_title(); ?></h1>
+          <h1 class="inner-title col-xl-6 offset-xl-2 col-lg-6 offset-lg-1"><i class="icon-card <?php the_field('css_ico_selector'); ?>"></i><?php the_title(); ?></h1>
           <p class="col-xl-6 offset-xl-2"><?php the_field('short_description'); ?></p>
           <div class="single-consult--buttons col-xl-6 offset-xl-2">
             <a class="single-consult--order" href="#">Онлайн запись</a> <a href="JavaScript:html5Lightbox.showLightbox(3, 'https://www.youtube.com/embed/<?php the_field('youtube'); ?>');" rel="lightbox" class="single-consult--video"><i class="svgico svgico-play"></i>Коротко о консультации</a>

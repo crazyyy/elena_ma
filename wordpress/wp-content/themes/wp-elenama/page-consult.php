@@ -13,7 +13,7 @@
                 <?php $posts = get_field('consultations_list'); if( $posts ): ?>
                 <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
                   <?php setup_postdata($post); ?>
-                    <div class="cards-item col-xl-4">
+                    <div class="cards-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
                       <i class="icon-card <?php the_field('css_ico_selector'); ?>"></i>
                       <h3><?php the_title(); ?></h3>
                       <?php /* wpeExcerpt('wpeExcerpt10'); */ ?>

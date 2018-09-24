@@ -3363,6 +3363,10 @@ nav ul li {
   font-weight: 700;
 }
 
+.news-list .breadcrumbs {
+  display: none;
+}
+
 .article--share {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -3618,8 +3622,8 @@ nav ul li {
 
 .single-consult--header .breadcrumbs {
   margin-bottom: 0;
-  padding: 0;
-  text-align-last: left;
+  padding: 0 15px;
+  text-align: left;
 }
 
 .single-consult--header .inner-title {
@@ -3997,6 +4001,9 @@ footer .footer--social__email {
   .homeblock-cards .container {
     max-width: 100%;
   }
+  .single-consult--header {
+    padding-top: 210px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 880px) {
@@ -4117,9 +4124,31 @@ footer .footer--social__email {
     text-align: center;
     margin-bottom: 20px;
   }
+  .page-consult .container {
+    max-width: 100%;
+  }
+  .single-consult--header {
+    height: auto;
+    background-image: none !important;
+  }
+  .single-consult--header .single-consult--breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .single-consult--header .single-consult--buttons {
+    margin-bottom: 30px;
+  }
+  .single-consult--header .single-consult-headline__more {
+    display: none;
+  }
+  .news-list, .page-inner {
+    padding-top: 210px;
+  }
 }
 
 @media (max-width: 575.98px) {
+  i.icon-card {
+    filter: grayscale(0);
+  }
   header .header--nav {
     padding-top: 20px;
   }
@@ -4168,6 +4197,31 @@ footer .footer--social__email {
   .looper--item p {
     display: none;
   }
+  .cards-item p {
+    display: none;
+  }
+  .single-consult--header .single-consult--breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .single-consult--header .single-consult--breadcrumbs li {
+    margin-bottom: 18px;
+  }
+  .single-consult--header p {
+    margin-bottom: 30px;
+  }
+  .single-consult--header .single-consult--order {
+    margin-bottom: 20px;
+  }
+  .single-consult--content {
+    padding-top: 30px;
+  }
+  .single-consult--content article ul li, .single-consult--content article ol li {
+    width: 100%;
+  }
+  .recent-news {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -4183,6 +4237,9 @@ footer .footer--social__email {
   }
   .homeblock-about .homeblock-about__content {
     margin-bottom: 15vw;
+  }
+  .single-consult--header .single-consult--order {
+    margin-right: 0;
   }
 }
 

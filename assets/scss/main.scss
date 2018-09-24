@@ -844,6 +844,11 @@ nav {
     }
   }
 }
+.news-list {
+  .breadcrumbs {
+    display: none;
+  }
+}
 .article--share {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1110,9 +1115,9 @@ nav {
   }
   .breadcrumbs {
     margin-bottom: 0;
-    padding: 0;
+    padding: 0 15px;
 
-    text-align-last: left;
+    text-align: left;
   }
   .inner-title {
     margin-bottom: 30px;

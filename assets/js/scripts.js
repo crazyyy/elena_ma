@@ -49,7 +49,9 @@ if (typeof jQuery === "undefined") {
 $(document).ready(function(){
   $('.homeblock-about__slider_slider').slick({
     arrows: false,
-    dots: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000
   });
   $( ".gallery br" ).each(function( index ) {
     $(this).remove();
@@ -66,7 +68,7 @@ $(document).ready(function(){
     if (target.length) {
       $('html,body').animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 3500);
       return false;
     }
   }

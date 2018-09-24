@@ -570,13 +570,17 @@ nav {
   }
 }
 .homeblock-halftext {
-  padding-top: 70px;
-  padding-bottom: 70px;
-
   background-color: #202020;
-  background-image: url(../img/bg-homeblock-halftext.png);
-  background-repeat: no-repeat;
-  background-position: right center;
+  .homeblock-halftext--content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .homeblock-halftext--image {
+    background-image: url(../img/bg-homeblock-halftext.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
   .homeblock-halftext__title{
     margin-bottom: 60px;
 

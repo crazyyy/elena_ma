@@ -44,6 +44,11 @@
     </div>
     <!-- /.single-consult--content -->
 
+    <div class="call-me-hidden">
+      <?php echo do_shortcode('[contact-form-7 id="187" title="Consultation"]'); ?>
+    </div>
+    <!-- /.call-me-hidden -->
+
   <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

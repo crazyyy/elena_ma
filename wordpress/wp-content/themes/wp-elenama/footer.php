@@ -27,6 +27,12 @@
     </div><!-- /.container -->
   </footer><!-- /footer -->
 
+  <div class="modal-bg">
+    <div class="modal-container">
+    </div><!-- /.modal-container -->
+    <span class="modal-close"></span>
+  </div><!-- /.modal-bg -->
+
   <?php wp_footer(); ?>
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />

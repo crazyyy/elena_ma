@@ -80,6 +80,48 @@ $(document).ready(function(){
     }, 3000);
   })
 
+  $('.article--share__share').on('click', function(e) {
+    e.stopPropagation();
+    $(this).find('.share-buttons').toggleClass('share-buttons--show');
+  })
 
+  $('.modal-close').on('click', function(e) {
+    console.log('obj');
+    CloseModal()
+  })
+
+  $('.modal-bg').on('click', function(e) {
+    console.log('obj');
+    CloseModal()
+  })
+
+  $('.modal-container').on('click', function(e) {
+    e.stopPropagation();
+  })
+
+  $('.single-consult--order').on('click', function(e) {
+    e.stopPropagation();
+    var html = $('.call-me-hidden form');
+    OpenModal(html);
+    $('.modal-bg').addClass('modal-bg--opened').addClass('modal-recall');
+  })
 
 });
+
+function CloseModal() {
+  if ($('.modal-bg').hasClass('modal-product')) {
+    var html = $('.modal-container').html();
+    $('.product-shortdescr--form').html(html);
+  }
+  if ($('.modal-bg').hasClass('modal-product-cat')) {
+    var html = $('.modal-container').html();
+    $('.loop-container--hidden').html(html);
+  }
+  $('.modal-container').html('');
+  $('.modal-bg').attr('class', '').addClass('modal-bg');
+  $('body').removeClass('modal-opened');
+}
+function OpenModal(html) {
+  $('.modal-container').html(html);
+  $('body').addClass('modal-opened');
+}

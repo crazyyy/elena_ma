@@ -1,11 +1,11 @@
 <?php /* Template Name: Consultation Page */ get_header(); ?>
 
   <div class="page-inner page-consult">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
 
         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class('col-xl-8 offset-xl-2'); ?>>
+          <article id="post-<?php the_ID(); ?>" <?php post_class('col-xl-12'); ?>>
             <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
             <h1 class="inner-title"><?php the_title(); ?></h1>
             <div class="page-consult--container">

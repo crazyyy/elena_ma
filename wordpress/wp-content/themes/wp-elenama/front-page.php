@@ -81,6 +81,18 @@
       <div class="container">
         <div class="row">
           <h4 class="homeblock-news--title col-xl-12">Новости</h4>
+          <ul class="news-list--catlist col-xl-12">
+            <?php
+              $args = array(
+                'orderby' => 'name',
+                'parent' => 0
+              );
+              $categories = get_categories($args);
+              foreach ($categories as $cat) {
+                echo '<li class="cat-item cat-item-'. $cat->term_id .'"><a href="/'. $cat->slug .'" class="class">'. $cat->name .'</a></li>';
+              }
+            ?>
+          </ul>
 
           <?php query_posts("showposts=4"); ?>
             <?php get_template_part('loop'); ?>

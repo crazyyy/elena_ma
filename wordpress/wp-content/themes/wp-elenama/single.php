@@ -11,12 +11,10 @@
             <?php the_category(', '); ?><span class="hnh-date">Дата публикации: <span><?php the_time('j F Y'); ?></span></span>
           </div><!-- /.looper--headline -->
           <h1 class="inner-title"><?php the_title(); ?></h1>
-          <div class="article--share">
-            <a href="#" class="article--share__fb"><i class="ico-soc--share_fb"></i>читать на facebook</a>
-            <a href="#" class="article--share__share"><i class="ico-soc--share"></i>Расказать друзям</a>
-          </div>
-          <!-- /.article--share -->
+          <?php get_template_part('sharing'); ?>
           <?php the_content(); ?>
+          <?php get_template_part('sharing'); ?>
+          <!-- /.article--share -->
           <?php edit_post_link(); ?>
         </article>
       <?php endwhile; endif; ?>

@@ -74,6 +74,12 @@ $(document).ready(function(){
   }
   });
 
+  $('.homeblock-about__content a').on('click', function(e){
+    e.preventDefault();
+    $('.more-blocks').toggleClass('more-blocks--shown');
+    $(this).hide();
+  })
+
   $('.single-consult--buttons').on('click', '.single-consult--video', function(){
     setTimeout(() => {
       $("#html5box-html5-lightbox").contents().find("#html5-watermark").attr("style","display:none;")

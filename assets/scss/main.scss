@@ -399,16 +399,14 @@ nav {
   }
   .homeblock-about__content {
     margin-bottom: 260px;
-    p {
-      margin-bottom: 50px;
+    > p {
+      margin-bottom: 25px;
 
       color: $black;
 
       font-size: 16px;
       line-height: 26px;
       &:first-child {
-        margin-bottom: 25px;
-
         opacity: 0.8;
 
         font-family: $cormo-font-family;
@@ -442,6 +440,20 @@ nav {
       &:hover{
         opacity: 0.8;
       }
+    }
+    .more-blocks {
+      overflow: hidden;
+
+      height: 0;
+
+      transition: all 1s;
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    .more-blocks--shown {
+      height: auto;
     }
   }
   .homeblock-about__slider_title {
@@ -1632,15 +1644,16 @@ footer {
     position: absolute;
     top: 50px;
     right: 50px;
+
     width: 46px;
     height: 46px;
-    background-image: url(../img/modal-close.png);
-    background-repeat: no-repeat;
 
     cursor: pointer;
     transition: $base-transition;
 
     color: #fff;
+    background-image: url(../img/modal-close.png);
+    background-repeat: no-repeat;
 
     font-size: 60px;
     &:hover {

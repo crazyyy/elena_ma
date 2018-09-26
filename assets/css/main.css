@@ -2951,15 +2951,14 @@ nav ul li {
   margin-bottom: 260px;
 }
 
-.homeblock-about .homeblock-about__content p {
-  margin-bottom: 50px;
+.homeblock-about .homeblock-about__content > p {
   color: #141414;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 25px;
 }
 
-.homeblock-about .homeblock-about__content p:first-child {
-  margin-bottom: 25px;
+.homeblock-about .homeblock-about__content > p:first-child {
   opacity: 0.8;
   font-family: "Cormorant Garamond", serif;
   font-size: 24px;
@@ -2987,6 +2986,21 @@ nav ul li {
 
 .homeblock-about .homeblock-about__content a:hover {
   opacity: 0.8;
+}
+
+.homeblock-about .homeblock-about__content .more-blocks {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.homeblock-about .homeblock-about__content .more-blocks p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.homeblock-about .homeblock-about__content .more-blocks--shown {
+  height: auto;
 }
 
 .homeblock-about .homeblock-about__slider_title {

@@ -2876,13 +2876,14 @@ nav ul li {
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
 }
 
 .homeblock-headline .homeblock-headline__description {
   text-transform: uppercase;
   color: #363636;
   font-family: "Cormorant Garamond", serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 68px;
 }
@@ -2895,7 +2896,7 @@ nav ul li {
   letter-spacing: 1px;
   text-transform: initial;
   color: #2f2f2f;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -2952,18 +2953,11 @@ nav ul li {
 }
 
 .homeblock-about .homeblock-about__content > p {
+  margin-bottom: 25px;
   color: #141414;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 25px;
-}
-
-.homeblock-about .homeblock-about__content > p:first-child {
-  opacity: 0.8;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 27px;
+  text-align: center;
 }
 
 .homeblock-about .homeblock-about__content a {
@@ -2989,8 +2983,8 @@ nav ul li {
 }
 
 .homeblock-about .homeblock-about__content .more-blocks {
-  height: 0;
   overflow: hidden;
+  height: 0;
   transition: all 1s;
 }
 
@@ -3129,9 +3123,9 @@ nav ul li {
 }
 
 .homeblock-halftext .homeblock-halftext--image {
-  background-image: url(../img/bg-homeblock-halftext.png);
+  background-image: url(../img/joytish.jpg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center;
   background-size: cover;
 }
 
@@ -4115,11 +4109,11 @@ footer .footer--social__email {
   right: 50px;
   width: 46px;
   height: 46px;
-  background-image: url(../img/modal-close.png);
-  background-repeat: no-repeat;
   cursor: pointer;
   transition: background-color 750ms ease, color 105ms ease, opacity 0.3s;
   color: #fff;
+  background-image: url(../img/modal-close.png);
+  background-repeat: no-repeat;
   font-size: 60px;
 }
 
@@ -4370,8 +4364,6 @@ footer .footer--social__email {
   .homeblock-halftext .homeblock-halftext--image {
     height: 224px;
     background-position: center bottom;
-    background-size: cover;
-    background-image: url(../img/bg-homeblock-halftext-sm.png);
   }
   .homeblock-news {
     padding-top: 60px;

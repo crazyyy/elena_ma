@@ -4207,6 +4207,10 @@ footer .footer--social__email {
   margin-bottom: 20px;
 }
 
+.homeblock-headline {
+  background-size: 40%;
+}
+
 @media (max-width: 1199.98px) {
   .homeblock-about {
     padding-top: 8vh;
@@ -4257,7 +4261,6 @@ footer .footer--social__email {
 
 @media (max-width: 991.98px) {
   .homeblock-headline {
-    background-image: url(../img/bg-homeblock-headline-md.png);
     background-position: center 70px;
     background-size: 70%;
   }

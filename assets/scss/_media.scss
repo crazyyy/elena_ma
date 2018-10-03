@@ -11,6 +11,9 @@
       margin-bottom: 20px;
     }
   }
+  .homeblock-headline {
+    background-size: 40%;
+  }
 
  }
 // col-lg-# ( ≥992px)
@@ -67,7 +70,7 @@
 // col-md-# ( ≥768px)
 @include media-breakpoint-down(md) {
   .homeblock-headline {
-    background-image: url(../img/bg-homeblock-headline-md.png);
+    // background-image: url(../img/bg-homeblock-headline-md.png);
     background-position: center 70px;
     background-size: 70%;
     .homeblock-headline__title {

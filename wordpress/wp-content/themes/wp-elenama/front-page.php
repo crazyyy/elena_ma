@@ -7,8 +7,8 @@
 
         <div class="homeblock-headline--container">
           <div class="row">
-            <h4 class="homeblock-headline__title col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
-            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3 col-lg-6 offset-lg-1 col-md-8">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
+            <h4 class="homeblock-headline__title col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-12">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
+            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3 col-lg-6 offset-lg-1 col-md-12">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
           </div><!-- /.row -->
           <a href="#homeblock-about" class="homeblock-headline__more"><i class="ico-more"></i>Узнать больше</a>
         </div>
@@ -25,7 +25,7 @@
             <?php the_content(); ?>
             <a href="#">Читать больше</a>
           </div><!-- /.homeblock-about__content col-xl-6 offset-xl-6 -->
-          <div class="homeblock-about__slider_title col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">Мои консультации<span>помогут вам:</span></div><!-- /.homeblock-about__slider_title -->
+          <div class="homeblock-about__slider_title col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">Мои консультации<span>помогут вам</span></div><!-- /.homeblock-about__slider_title -->
           <div class="homeblock-about__slider_container col-xl-5 offset-xl-5 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
             <div class="homeblock-about__slider_slider">
               <?php if( have_rows('slider') ) { while ( have_rows('slider') ) : the_row(); ?>

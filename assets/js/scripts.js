@@ -112,6 +112,15 @@ $(document).ready(function(){
     $('.modal-bg').addClass('modal-bg--opened').addClass('modal-recall');
   })
 
+  $('.header--nav').on('click', function(e){
+    if ($(window).width() < 992) {
+      $(this).toggleClass('header--nav__mobiled');
+    }
+  })
+  $('.header--nav li').on('click', function(e){
+    e.stopPropagation();
+  })
+
 });
 
 function CloseModal() {

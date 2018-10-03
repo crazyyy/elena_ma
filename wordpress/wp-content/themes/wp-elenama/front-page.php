@@ -8,7 +8,7 @@
         <div class="homeblock-headline--container">
           <div class="row">
             <h4 class="homeblock-headline__title col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-12">Елена Ма<span>Профессиональный ведический астролог  </span></h4>
-            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3 col-lg-6 offset-lg-1 col-md-12">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив.</span></h5>
+            <h5 class="homeblock-headline__description col-xl-6 offset-xl-3 col-lg-6 offset-lg-1 col-md-12">У тебя есть <span>твой путь</span> <span class="homeblock-headline__small">Следуя своему пути ты будешь счастлив</span></h5>
           </div><!-- /.row -->
           <a href="#homeblock-about" class="homeblock-headline__more"><i class="ico-more"></i>Узнать больше</a>
         </div>
@@ -64,13 +64,15 @@
     <div class="homeblock-halftext">
       <div class="container-fluid">
         <div class="row">
-          <div class="homeblock-halftext--content col-xl-5 offset-xl-2 col-lg-6 offset-lg-1 col-md-7">
-            <h3 class="homeblock-halftext__title">Джйотиш</h3>
-            <p>Джйотиш – это древнее знание о взаимосвязи Человека и Вселенной, открывающее  предназначение,  с которым мы приходим в  этот  мир.</p>
-            <p>Сделав прочтение своей карты рождения  в традиции джйотиш, вы получите глубокое вдохновляющее знание о вашем потенциале, о сценарии своей жизни и  кармическом рисунке своей судьбы.</p>
-            <a href="/konsultatsii/">выбрать консультацию</a>
+          <div class="homeblock-halftext--content col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6">
+            <h3 class="homeblock-halftext__title">Школа Джйотиша</h3>
+            <p>Джйотиш – это древнее знание о взаимосвязи человека и Вселенной, открывающее предназначение,  с которым мы приходим в этот мир.</p>
           </div>
-          <div class="homeblock-halftext--image col-xl-5 col-lg-5 col-md-5"></div>
+          <div class="homeblock-halftext--image col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1">
+            <p>Джйотиш как наука является необходимым этапом подготовки человека к познанию своей природы, развитию способности следовать своему предназначению и духовной самореализации.</p>
+            <p>Джйотиш как искусство является виртуозным инструментом. Это ваша возможность осуществлять навигацию в пространстве и времени  для сбалансированного, гармоничного и осознанного проживания своей жизни в согласии с ритмами Вселенной.</p>
+            <a href="#">Посмотреть курсы</a>
+          </div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /.homeblock-halftext -->

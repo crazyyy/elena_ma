@@ -9,7 +9,7 @@
 
         <div class="footer--social col-xl-4 col-lg-4 col-md-12 col-sm-12 order-xl-2 order-lg-2 order-md-3 order-sm-3">
           <ul>
-            <li><a href="#"><i class="ico-soc ico-soc--fb"></i>facebook</a></li>
+            <li><a href="https://www.facebook.com/GeometryDestiny"><i class="ico-soc ico-soc--fb"></i>facebook</a></li>
             <li><a href="#"><i class="ico-soc ico-soc--in"></i>instagram</a></li>
             <li><a href="#"><i class="ico-soc ico-soc--yt"></i>youtube</a></li>
           </ul>

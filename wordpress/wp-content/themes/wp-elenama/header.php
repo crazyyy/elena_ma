@@ -48,15 +48,16 @@
             <?php if ( !is_front_page() && !is_home() ){ ?>
               </a>
             <?php } ?>
+            <span class="header--logo__title">GEOMETRY OF DESTINY</span>
           </div><!-- /header--logo -->
 
-          <nav class="header--nav col-xl-4 offset-xl-4 col-lg-5 offset-lg-3 col-md-7 offset-md-0 col-sm-10 offset-sm-2" role="navigation">
+          <nav class="header--nav col-xl-6 offset-xl-2 col-lg-7 offset-lg-1 col-md-7 offset-md-0 col-sm-10 offset-sm-2" role="navigation">
             <?php wpeHeadNav(); ?>
           </nav><!-- /header--nav -->
 
-          <div class="header--phone col-xl-2 col-lg-2 col-md-3 col-sm-10">
+          <div class="header--phone col-xl-2 col-lg-2 col-md-10 col-sm-10">
             <a href="tel:+380504802828" class="header--phone__phone"><i class="ico-phone"></i>+38 050 480 28 28</a>
-            <p>Доступный в <a class="header--phone__viber" href="">Viber</a></p>
+            <p>Доступный в <a class="header--phone__viber" href="">Viber</a> и <a class="header--phone__watsapp" href="">WatsApp</a></p>
           </div><!-- /header--phone -->
 
         </div><!-- /.row -->

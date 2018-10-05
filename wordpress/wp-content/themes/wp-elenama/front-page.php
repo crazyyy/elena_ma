@@ -25,7 +25,7 @@
             <?php the_content(); ?>
             <a href="#">Читать больше</a>
           </div><!-- /.homeblock-about__content col-xl-6 offset-xl-6 -->
-          <div class="homeblock-about__slider_title col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">Мои консультации<span>помогут вам</span></div><!-- /.homeblock-about__slider_title -->
+          <div class="homeblock-about__slider_title col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">Мои консультации<span> помогут вам</span></div><!-- /.homeblock-about__slider_title -->
           <div class="homeblock-about__slider_container col-xl-5 offset-xl-5 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
             <div class="homeblock-about__slider_slider">
               <?php if( have_rows('slider') ) { while ( have_rows('slider') ) : the_row(); ?>

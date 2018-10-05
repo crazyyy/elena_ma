@@ -201,8 +201,8 @@
     margin: 0 auto;
     padding-top: 20px;
     .footer-logo {
-      height: 90px;
-      margin-bottom: 20px;
+      // height: 90px;
+      // margin-bottom: 20px;
     }
     .footer--social {
       ul {
@@ -304,7 +304,17 @@
   .news-list, .page-inner {
     padding-top: 210px;
   }
-
+  .looper--item:before {
+    left: 0;
+    right: 0;
+  }
+  footer .footer-logo {
+    text-align: center;
+  }
+  footer .footer--contacts {
+    text-align: center;
+    background-position: center 90px;
+  }
 }
 // col-# ( <575.5px)
 @include media-breakpoint-down(xs) {
@@ -316,7 +326,6 @@
   header  {
     .header--nav {
       // padding-top: 20px;
-
     }
     .header--phone {
       padding-top: 0;
@@ -343,6 +352,24 @@
 
   //   }
   // }
+  .homeblock-headline {
+    background-position: center 160px
+  }
+  .homeblock-headline .homeblock-headline__title {
+    padding-top: 480px;
+  }
+  .homeblock-headline .homeblock-headline__more {
+    display: none;
+  }
+  .homeblock-about {
+    background-size: 80%;
+  }
+  .homeblock-about .homeblock-about__title {
+    margin-bottom: 350px;
+  }
+  .homeblock-about .homeblock-about__slider_container h6 {
+    text-align: center;
+  }
   .header--phone {
     -webkit-box-flex: 0;
     flex: 0 0 66.66667%;

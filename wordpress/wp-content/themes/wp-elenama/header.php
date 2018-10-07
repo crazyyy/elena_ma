@@ -48,7 +48,6 @@
             <?php if ( !is_front_page() && !is_home() ){ ?>
               </a>
             <?php } ?>
-            <span class="header--logo__title">GEOMETRY OF DESTINY</span>
           </div><!-- /header--logo -->
 
           <nav class="header--nav col-xl-6 offset-xl-2 col-lg-7 offset-lg-1 col-md-7 offset-md-0 col-sm-10 offset-sm-2" role="navigation">

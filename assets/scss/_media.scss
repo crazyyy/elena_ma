@@ -12,7 +12,7 @@
     }
   }
   .homeblock-headline {
-    background-size: 40%;
+    background-size: 37%;
   }
 
 }
@@ -20,8 +20,8 @@
 @include media-breakpoint-down(lg) {
   .homeblock-about{
     padding-top: 8vh;
-
-    background-position: 4.5vw 24vh;
+    background-position: 80px 170px;
+    background-size: 360px;
     .homeblock-about__content {
       margin-bottom: 120px;
     }
@@ -69,6 +69,10 @@
 
       transform: scale(1.1);
     }
+  }
+  .cards-item:before {
+    bottom: -25px;
+    top: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 880px) {
@@ -137,12 +141,12 @@
     }
   }
   .homeblock-headline {
-    // background-image: url(../img/bg-homeblock-headline-md.png);
     background-position: center 70px;
     background-size: 70%;
+    background-image: none !important;
     .homeblock-headline__title {
       margin-bottom: 40px;
-      padding-top: 50vh;
+      padding-top: 10vh;
 
       text-align: center;
 
@@ -200,10 +204,6 @@
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
-    .footer-logo {
-      // height: 90px;
-      // margin-bottom: 20px;
-    }
     .footer--social {
       ul {
         margin-bottom: 20px;
@@ -258,10 +258,7 @@
   }
   .homeblock-halftext {
     .homeblock-halftext--image {
-      // height: 224px;
       background-position: center bottom;
-      // background-size: cover;
-      // background-image: url(../img/bg-homeblock-halftext-sm.png);
     }
   }
   .homeblock-news {
@@ -324,9 +321,6 @@
     }
   }
   header  {
-    .header--nav {
-      // padding-top: 20px;
-    }
     .header--phone {
       padding-top: 0;
     }
@@ -336,33 +330,14 @@
 
     max-width: 33.33333%;
   }
-  // .header--nav {
-  //   -webkit-box-flex: 0;
-  //   flex: 0 0 66.66667%;
-
-  //   max-width: 66.66667%;
-  //   margin-left: 33.33333%;
-  //   ul {
-  //     text-align: right;
-  //   }
-  //   li {
-  //     display: block;
-
-  //     margin-bottom: 10px;
-
-  //   }
-  // }
   .homeblock-headline {
     background-position: center 160px
   }
   .homeblock-headline .homeblock-headline__title {
-    padding-top: 480px;
+    padding-top: 0;
   }
   .homeblock-headline .homeblock-headline__more {
     display: none;
-  }
-  .homeblock-about {
-    background-size: 80%;
   }
   .homeblock-about .homeblock-about__title {
     margin-bottom: 350px;
@@ -392,13 +367,31 @@
       padding-top: 0;
     }
   }
+  .homeblock-headline .homeblock-headline--container {
+    height: auto;
+    padding-top: 170px;
+    margin-bottom: 60px;
+  }
+  .homeblock-headline .homeblock-headline__description {
+    font-size: 46px;
+  }
+  .single-consult--header {
+    padding-top: 160px;
+  }
+  .news-list--title{
+    font-size: 36px;
+  }
   .looper--item {
     .looper--name {
       margin-bottom: 0;
+      a {
+        color: $violet;
+      }
     }
     p {
       display: none;
     }
+
   }
   .cards-item {
     p {
@@ -462,5 +455,14 @@
     .single-consult--order {
       margin-right: 0;
     }
+  }
+  .news-list .inner-title, .page-inner .inner-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-height: 675px) {
+  .homeblock-headline .homeblock-headline__title:before {
+    display: none;
   }
 }

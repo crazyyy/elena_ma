@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="footer-logo col-xl-4 col-lg-4 col-md-6 col-sm-12 order-xl-1 order-lg-1 order-md-1 order-sm-1">
+        <div class="footer-logo col-xl-4 col-lg-4 col-md-6 col-sm-6 order-xl-1 order-lg-1 order-md-1 order-sm-1">
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeometryDestiny%2F&tabs&width=250&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
 
@@ -20,7 +20,7 @@
           </p>
         </div><!-- /.footer--social -->
 
-        <div class="footer--contacts col-xl-4 col-lg-4 col-md-6 col-sm-12 order-xl-3 order-lg-3 order-md-2 order-sm-2">
+        <div class="footer--contacts col-xl-4 col-lg-4 col-md-6 col-sm-6 order-xl-3 order-lg-3 order-md-2 order-sm-2">
           <a href="tel:+380974584565" class="footer--social__phone">+38 097 458 45 65</a>
           <a href="mailto:miracledevama@gmail.com" class="footer--social__email">miracledevama@gmail.com</a>
         </div><!-- /.footer--contacts col-xl-4 -->

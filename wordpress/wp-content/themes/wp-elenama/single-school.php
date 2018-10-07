@@ -19,6 +19,11 @@
         </article>
       <?php endwhile; endif; ?>
 
+      <h4 class="recent-news col-xl-8 offset-xl-2">Последние новости</h4>
+      <?php query_posts("showposts=4"); ?>
+        <?php get_template_part('loop'); ?>
+      <?php wp_reset_query(); ?>
+
     </div>
     <!-- /.row -->
   </div>

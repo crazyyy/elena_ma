@@ -2752,7 +2752,8 @@ header .header--logo__title {
   text-align: center;
   letter-spacing: .86px;
   color: #f89e2f;
-  font-size: 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -2870,9 +2871,10 @@ nav ul li {
 .homeblock-headline .homeblock-headline__title {
   position: relative;
   margin-bottom: 100px;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 1.5px;
   color: #2f2f2f;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -2946,7 +2948,8 @@ nav ul li {
   padding-top: 14vh;
   background-image: url(../img/bg-homeblock-about.png);
   background-repeat: no-repeat;
-  background-position: 15vw 24vh;
+  background-position: 100px 170px;
+  background-size: 550px;
   /*
   .slick-dots li button:before {
     @include sprite($sprite-slider-dot);
@@ -3539,7 +3542,7 @@ nav ul li {
 }
 
 .news-list--catlist li.cat-item-1 a {
-  background-color: #141414;
+  background-color: #f7f156;
 }
 
 .news-list--catlist li.cat-item-9 a {
@@ -3621,7 +3624,7 @@ nav ul li {
 }
 
 .looper--item .looper--headline .catname_news {
-  background-color: #141414;
+  background-color: #f7f156;
 }
 
 .looper--item .hnh-date {
@@ -3716,10 +3719,9 @@ nav ul li {
   position: relative;
   height: 100vh;
   padding-top: 16vh;
+  background-image: url(../img/consult-page-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: none !important;
+  background-position: 115% center;
 }
 
 .single-consult--header .single-consult--breadcrumbs {
@@ -3927,6 +3929,10 @@ article .slick-slider.gallery img {
   transform: scale(1);
 }
 
+aside {
+  margin-bottom: 100px;
+}
+
 aside .widget {
   padding: 30px 24px;
   background-color: #ffffff;
@@ -3987,7 +3993,7 @@ aside .widget input[type=submit] {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 30px;
-  background-image: linear-gradient(45deg, #ff6b6b 0%, #fca451 100%);
+  background-image: linear-gradient(45deg, #5c0184 0%, #5c0184 100%);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.17);
   font-size: 14px;
   font-weight: 700;
@@ -3995,7 +4001,7 @@ aside .widget input[type=submit] {
 
 aside .widget input[type=submit]:hover {
   color: #f89e2f;
-  background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
+  background-image: linear-gradient(270deg, #5c0184 100%, #5c0184 0%);
 }
 
 .page-consult .inner-title,
@@ -4250,13 +4256,14 @@ footer .footer--social__email {
 }
 
 .homeblock-headline {
-  background-size: 40%;
+  background-size: 37%;
 }
 
 @media (max-width: 1199.98px) {
   .homeblock-about {
     padding-top: 8vh;
-    background-position: 4.5vw 24vh;
+    background-position: 80px 170px;
+    background-size: 360px;
   }
   .homeblock-about .homeblock-about__content {
     margin-bottom: 120px;
@@ -4292,6 +4299,10 @@ footer .footer--social__email {
     margin-top: 40px;
     margin-bottom: 40px;
     transform: scale(1.1);
+  }
+  .cards-item:before {
+    bottom: -25px;
+    top: 15px;
   }
 }
 
@@ -4347,10 +4358,11 @@ footer .footer--social__email {
   .homeblock-headline {
     background-position: center 70px;
     background-size: 70%;
+    background-image: none !important;
   }
   .homeblock-headline .homeblock-headline__title {
     margin-bottom: 40px;
-    padding-top: 50vh;
+    padding-top: 10vh;
     text-align: center;
     font-size: 7vw;
   }
@@ -4508,13 +4520,10 @@ footer .footer--social__email {
     background-position: center 160px;
   }
   .homeblock-headline .homeblock-headline__title {
-    padding-top: 480px;
+    padding-top: 0;
   }
   .homeblock-headline .homeblock-headline__more {
     display: none;
-  }
-  .homeblock-about {
-    background-size: 80%;
   }
   .homeblock-about .homeblock-about__title {
     margin-bottom: 350px;
@@ -4541,8 +4550,25 @@ footer .footer--social__email {
     margin-bottom: 20px;
     padding-top: 0;
   }
+  .homeblock-headline .homeblock-headline--container {
+    height: auto;
+    padding-top: 170px;
+    margin-bottom: 60px;
+  }
+  .homeblock-headline .homeblock-headline__description {
+    font-size: 46px;
+  }
+  .single-consult--header {
+    padding-top: 160px;
+  }
+  .news-list--title {
+    font-size: 36px;
+  }
   .looper--item .looper--name {
     margin-bottom: 0;
+  }
+  .looper--item .looper--name a {
+    color: #5c0184;
   }
   .looper--item p {
     display: none;
@@ -4594,6 +4620,15 @@ footer .footer--social__email {
   }
   .single-consult--header .single-consult--order {
     margin-right: 0;
+  }
+  .news-list .inner-title, .page-inner .inner-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-height: 675px) {
+  .homeblock-headline .homeblock-headline__title:before {
+    display: none;
   }
 }
 

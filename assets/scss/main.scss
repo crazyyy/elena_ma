@@ -196,8 +196,9 @@ header {
     letter-spacing: .86px;
 
     color: $orange;
+    font-family: $cormo-font-family;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
   }
   .header--nav {
@@ -318,11 +319,12 @@ nav {
 
     margin-bottom: 100px;
 
+    font-family: $cormo-font-family;
     letter-spacing: 1.5px;
 
     color: $gray-medium;
 
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     &:before {
       position: absolute;
@@ -407,7 +409,8 @@ nav {
 
   background-image: url(../img/bg-homeblock-about.png);
   background-repeat: no-repeat;
-  background-position: 15vw 24vh;
+  background-position: 100px 170px;
+  background-size: 550px;
   .homeblock-about__title {
     margin-bottom: 70px;
 
@@ -431,15 +434,6 @@ nav {
 
       font-size: 16px;
       line-height: 26px;
-      &:first-child {
-        // opacity: 0.8;
-
-        // font-family: $cormo-font-family;
-        // font-size: 24px;
-        // font-weight: 700;
-        // line-height: 27px;
-
-      }
     }
     a {
       position: relative;
@@ -1044,7 +1038,7 @@ nav {
     margin: 0 10px;
     &.cat-item-1 {
       a {
-        background-color: $black;
+        background-color: #f7f156;
       }
     }
     &.cat-item-9 {
@@ -1132,7 +1126,7 @@ nav {
       background-color: #f89e2f;
     }
     .catname_news {
-      background-color: #141414;
+      background-color: #f7f156;
     }
   }
 
@@ -1227,11 +1221,9 @@ nav {
 
   height: 100vh;
   padding-top: 16vh;
-
+  background-image: url(../img/consult-page-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: none !important;
+  background-position: 115% center;
   .single-consult--breadcrumbs {
     margin-bottom: 86px;
     padding: 0;
@@ -1457,6 +1449,7 @@ article {
   }
 }
 aside {
+  margin-bottom: 100px;
   .widget {
     padding: 30px 24px;
 
@@ -1526,14 +1519,14 @@ aside {
 
       color: #ffffff;
       border-radius: 30px;
-      background-image: linear-gradient(45deg, #ff6b6b 0%, #fca451 100%);
+      background-image: linear-gradient(45deg,$violet 0%, $violet 100%);
       box-shadow: 0 14px 30px rgba(0, 0, 0, 0.17);
 
       font-size: 14px;
       font-weight: 700;
       &:hover{
         color: $orange;
-        background-image: linear-gradient(270deg, #ff6b6b 100%, #fca451 0%);
+        background-image: linear-gradient(270deg, $violet 100%, $violet 0%);
       }
     }
   }
@@ -1557,9 +1550,6 @@ footer {
 }
 footer {
   padding-top: 60px;
-  .footer-logo {
-
-  }
   .footer--social {
     ul {
       display: flex;

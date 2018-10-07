@@ -2,15 +2,7 @@
 
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-    <?php $image = get_field('single_header_background');
-      if( !empty($image) ) {
-        $bgi = $image['url'];
-      } else {
-        $bgi  = get_template_directory_uri() . '/img/karta-vashego-rebenka.jpg';
-      }
-    ?>
-
-    <div class="single-consult--header" style="background-image: url(<?php echo $bgi ; ?>);">
+    <div class="single-consult--header">
       <div class="container">
         <div class="row">
           <div class="single-consult--breadcrumbs col-xl-6 offset-xl-2">
